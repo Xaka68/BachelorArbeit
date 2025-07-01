@@ -1,0 +1,1 @@
+{"model_l2_norm/class_0":11.00599025874033,"_runtime":163.845874279,"_wandb":{"runtime":165},"accuracy/class_0":0.9887755102040816,"_timestamp":1.7495934262937512e+09,"_step":13,"percent_selected_class_0":0.054,"avg_entropy_selected_class_0":0.9959391355514526,"percent_queried/class_0":0.10833333333333334}
