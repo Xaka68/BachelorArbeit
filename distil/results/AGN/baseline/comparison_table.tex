@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\begin{tabular}{ccccccccccccc}
+\toprule
+Class & Evaluation_summary_balddropout AUC & Evaluation_summary_balddropout Saving & Evaluation_summary_badge AUC & Evaluation_summary_badge Saving & Evaluation_summary_entropy AUC & Evaluation_summary_entropy Saving & Evaluation_summary_leastconfidence AUC & Evaluation_summary_leastconfidence Saving & Evaluation_summary_marginsampling AUC & Evaluation_summary_marginsampling Saving & Evaluation_summary_random AUC & Evaluation_summary_random Saving \\ \midrule
+0 & 1272.00 & \textbf{99.08} & 1269.00 & 98.08 & 1277.85 & 98.33 & \textbf{1279.95} & 98.83 & 1275.75 & 98.58 & 1273.65 & 98.33 \\
+1 & \textbf{1420.20} & \textbf{98.83} & 1413.15 & 98.08 & 1415.25 & \textbf{98.83} & 1415.70 & \textbf{98.83} & 1415.85 & \textbf{98.83} & 1408.80 & 98.33 \\
+2 & 1199.40 & \textbf{98.33} & 1201.80 & \textbf{98.33} & 1179.15 & 97.83 & 1201.35 & \textbf{98.33} & 1190.40 & 98.08 & \textbf{1202.25} & \textbf{98.33} \\
+3 & 1206.75 & \textbf{98.83} & 1196.85 & \textbf{98.83} & 1195.35 & \textbf{98.83} & 1190.70 & 98.08 & \textbf{1208.40} & 98.58 & 1168.95 & 97.83 \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of AUC and label saving per class across active learning strategies. Best values per class are in bold.}
+\label{tab:auc_label_saving}
+\end{table}
+
+\end{document}
