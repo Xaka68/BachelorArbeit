@@ -1,0 +1,9 @@
+---------------------
+Round 0
+---------------------
+Training Points - 300
+Test Accuracy - 39.59
+Class 2 Accuracy - 51.42
+Class 3 Accuracy - 18.05
+Class 1 Accuracy - 46.21
+Class 0 Accuracy - 42.68

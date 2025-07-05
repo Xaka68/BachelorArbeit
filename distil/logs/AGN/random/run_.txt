@@ -644,3 +644,291 @@ Epoch:36- training accuracy:0.9854716981132076- training loss:tensor(0.0015, dev
 Epoch:37- training accuracy:0.9888679245283019- training loss:tensor(0.0300, device='cuda:0', grad_fn=<NllLossBackward0>)
 Epoch:38- training accuracy:0.9864150943396226- training loss:tensor(0.0112, device='cuda:0', grad_fn=<NllLossBackward0>)
 Epoch:39- training accuracy:0.990754716981132- training loss:tensor(0.0496, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 6
+---------------------
+Training Points - 6300
+Test Accuracy - 78.63
+Class 2 Accuracy - 76.89
+Class 3 Accuracy - 71.58
+Class 1 Accuracy - 83.32
+Class 0 Accuracy - 82.74
+Selection Time - 0.0028913021087646484
+Trainining Time - 16114.093649148941
+Training
+Epoch:2- training accuracy:0.2611111111111111- training loss:tensor(1.2850, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.24841269841269842- training loss:tensor(1.4602, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.25222222222222224- training loss:tensor(1.4424, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.2511111111111111- training loss:tensor(1.4495, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.2679365079365079- training loss:tensor(1.1331, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.27126984126984127- training loss:tensor(1.2072, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.35- training loss:tensor(1.6534, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.42428571428571427- training loss:tensor(1.7291, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.42793650793650795- training loss:tensor(1.1918, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.46285714285714286- training loss:tensor(1.0312, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.4828571428571429- training loss:tensor(0.5115, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.54- training loss:tensor(1.1085, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.5980952380952381- training loss:tensor(0.6609, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.6531746031746032- training loss:tensor(1.2507, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.693968253968254- training loss:tensor(0.6153, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.7422222222222222- training loss:tensor(1.9902, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.7658730158730159- training loss:tensor(0.5072, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.8065079365079365- training loss:tensor(0.8336, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.8439682539682539- training loss:tensor(0.2564, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.8658730158730159- training loss:tensor(0.3483, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.8952380952380953- training loss:tensor(0.2950, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9223809523809524- training loss:tensor(0.0234, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9393650793650794- training loss:tensor(0.1467, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9528571428571428- training loss:tensor(1.4674, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.9573015873015873- training loss:tensor(0.0508, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.963015873015873- training loss:tensor(0.1200, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9673015873015873- training loss:tensor(0.0802, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9720634920634921- training loss:tensor(0.1031, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9773015873015873- training loss:tensor(0.0805, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.9782539682539683- training loss:tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:32- training accuracy:0.9741269841269842- training loss:tensor(0.2859, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:33- training accuracy:0.9806349206349206- training loss:tensor(0.1050, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:34- training accuracy:0.9896825396825397- training loss:tensor(0.9381, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:35- training accuracy:0.9906349206349206- training loss:tensor(0.0225, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 7
+---------------------
+Training Points - 7300
+Test Accuracy - 79.5
+Class 2 Accuracy - 87.0
+Class 3 Accuracy - 65.37
+Class 1 Accuracy - 86.0
+Class 0 Accuracy - 79.63
+Selection Time - 0.002130746841430664
+Trainining Time - 13700.97146487236
+Training
+Epoch:2- training accuracy:0.25123287671232875- training loss:tensor(1.3110, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.2515068493150685- training loss:tensor(1.2635, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.2586301369863014- training loss:tensor(1.4669, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.2993150684931507- training loss:tensor(1.3179, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.3256164383561644- training loss:tensor(1.0248, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.4089041095890411- training loss:tensor(1.1093, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.45794520547945206- training loss:tensor(1.3387, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.49534246575342467- training loss:tensor(0.9332, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.563013698630137- training loss:tensor(1.0165, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.630958904109589- training loss:tensor(0.4184, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.6910958904109589- training loss:tensor(0.4005, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.7587671232876713- training loss:tensor(1.1793, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.8015068493150685- training loss:tensor(0.8992, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.8372602739726027- training loss:tensor(0.3456, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.8767123287671232- training loss:tensor(0.3042, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.8941095890410959- training loss:tensor(0.5501, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.9224657534246575- training loss:tensor(0.1227, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.9334246575342465- training loss:tensor(0.0626, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.9446575342465754- training loss:tensor(0.0050, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.9505479452054795- training loss:tensor(0.0341, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.9554794520547946- training loss:tensor(0.0651, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9647945205479452- training loss:tensor(0.1822, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9716438356164384- training loss:tensor(0.0030, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9739726027397261- training loss:tensor(0.0120, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.979041095890411- training loss:tensor(0.0012, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.9773972602739726- training loss:tensor(0.1452, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9795890410958904- training loss:tensor(0.0155, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9834246575342466- training loss:tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9849315068493151- training loss:tensor(0.2099, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.9847945205479453- training loss:tensor(0.7222, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:32- training accuracy:0.9832876712328767- training loss:tensor(0.0064, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:33- training accuracy:0.9827397260273972- training loss:tensor(0.0017, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:34- training accuracy:0.9836986301369863- training loss:tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:35- training accuracy:0.9901369863013698- training loss:tensor(0.0015, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 8
+---------------------
+Training Points - 8300
+Test Accuracy - 83.54
+Class 2 Accuracy - 84.0
+Class 3 Accuracy - 76.89
+Class 1 Accuracy - 95.53
+Class 0 Accuracy - 77.74
+Selection Time - 0.0022211074829101562
+Trainining Time - 16527.613250732422
+Training
+Epoch:2- training accuracy:0.24313253012048192- training loss:tensor(1.4492, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.3014457831325301- training loss:tensor(0.9755, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.3175903614457831- training loss:tensor(1.4732, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.3821686746987952- training loss:tensor(1.4871, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.45313253012048194- training loss:tensor(1.1476, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.5389156626506024- training loss:tensor(0.8914, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.6068674698795181- training loss:tensor(0.7304, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.6589156626506024- training loss:tensor(0.4444, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.693855421686747- training loss:tensor(0.1173, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.7403614457831326- training loss:tensor(0.2110, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.7904819277108434- training loss:tensor(0.2925, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.8416867469879518- training loss:tensor(0.0479, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.8825301204819277- training loss:tensor(0.4706, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.9096385542168675- training loss:tensor(0.7390, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.922289156626506- training loss:tensor(0.1636, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.9401204819277108- training loss:tensor(0.0724, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.9495180722891566- training loss:tensor(0.0694, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.9586746987951807- training loss:tensor(1.1424, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.9626506024096385- training loss:tensor(0.0099, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.9730120481927711- training loss:tensor(0.0315, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.9754216867469879- training loss:tensor(0.0355, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9773493975903614- training loss:tensor(0.0011, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9736144578313253- training loss:tensor(0.0050, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9793975903614458- training loss:tensor(0.0013, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.9819277108433735- training loss:tensor(0.0439, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.9824096385542168- training loss:tensor(0.0839, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9855421686746988- training loss:tensor(0.0015, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9857831325301205- training loss:tensor(0.0032, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9832530120481928- training loss:tensor(0.0067, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.9886746987951808- training loss:tensor(0.0056, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:32- training accuracy:0.986144578313253- training loss:tensor(0.0128, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:33- training accuracy:0.9842168674698795- training loss:tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:34- training accuracy:0.9878313253012048- training loss:tensor(0.0380, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:35- training accuracy:0.984578313253012- training loss:tensor(0.2017, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:36- training accuracy:0.9896385542168674- training loss:tensor(0.0102, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:37- training accuracy:0.9904819277108434- training loss:tensor(0.2162, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 9
+---------------------
+Training Points - 9300
+Test Accuracy - 84.2
+Class 2 Accuracy - 80.74
+Class 3 Accuracy - 79.68
+Class 1 Accuracy - 91.63
+Class 0 Accuracy - 84.74
+Selection Time - 0.0024619102478027344
+Trainining Time - 15467.444124937057
+Training
+Epoch:2- training accuracy:0.24387096774193548- training loss:tensor(1.3758, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.25526881720430106- training loss:tensor(1.3406, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.250752688172043- training loss:tensor(1.5082, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.2561290322580645- training loss:tensor(1.6519, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.3339784946236559- training loss:tensor(1.1133, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.42- training loss:tensor(1.4292, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.5327956989247312- training loss:tensor(0.6750, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.6389247311827957- training loss:tensor(0.2899, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.7034408602150538- training loss:tensor(0.7813, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.7644086021505376- training loss:tensor(0.1999, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.801505376344086- training loss:tensor(0.3720, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.8446236559139785- training loss:tensor(0.2949, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.8766666666666667- training loss:tensor(0.4046, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.9004301075268817- training loss:tensor(0.3548, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.9183870967741935- training loss:tensor(0.0474, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.9383870967741935- training loss:tensor(0.0256, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.9525806451612904- training loss:tensor(0.0100, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.9596774193548387- training loss:tensor(0.1041, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.9627956989247312- training loss:tensor(0.2124, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.9698924731182795- training loss:tensor(0.0054, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.9744086021505376- training loss:tensor(0.0310, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9755913978494624- training loss:tensor(0.0762, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9793548387096774- training loss:tensor(0.0056, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9826881720430107- training loss:tensor(0.0139, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.9890322580645161- training loss:tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.9882795698924731- training loss:tensor(0.0051, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9867741935483871- training loss:tensor(0.0428, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9873118279569892- training loss:tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9881720430107527- training loss:tensor(0.0050, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.991505376344086- training loss:tensor(0.1268, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 10
+---------------------
+Training Points - 10300
+Test Accuracy - 83.59
+Class 2 Accuracy - 72.89
+Class 3 Accuracy - 79.74
+Class 1 Accuracy - 97.84
+Class 0 Accuracy - 83.89
+Selection Time - 0.0021181106567382812
+Trainining Time - 20473.386103630066
+Training
+Epoch:2- training accuracy:0.24398058252427185- training loss:tensor(1.4941, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.25155339805825244- training loss:tensor(1.3668, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.2624271844660194- training loss:tensor(1.4472, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.3583495145631068- training loss:tensor(0.6683, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.5106796116504855- training loss:tensor(1.0931, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.6017475728155339- training loss:tensor(0.5110, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.6895145631067962- training loss:tensor(0.1830, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.7776699029126214- training loss:tensor(0.2429, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.7511650485436894- training loss:tensor(0.9002, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.7766990291262136- training loss:tensor(0.2022, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.8536893203883495- training loss:tensor(0.7347, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.8919417475728155- training loss:tensor(0.2331, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.9140776699029126- training loss:tensor(0.0857, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.93- training loss:tensor(0.0294, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.9360194174757281- training loss:tensor(0.1479, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.9494174757281554- training loss:tensor(0.0080, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.960873786407767- training loss:tensor(0.1391, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.9655339805825243- training loss:tensor(0.0318, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.97- training loss:tensor(0.0052, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.9699029126213592- training loss:tensor(0.0106, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.9703883495145631- training loss:tensor(0.0056, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9732038834951456- training loss:tensor(0.0083, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9762135922330097- training loss:tensor(0.0059, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9776699029126213- training loss:tensor(0.1179, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.9786407766990292- training loss:tensor(0.0606, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.9837864077669903- training loss:tensor(0.0013, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9812621359223301- training loss:tensor(0.0281, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9825242718446602- training loss:tensor(0.1517, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9817475728155339- training loss:tensor(0.0119, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.9872815533980582- training loss:tensor(0.0039, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:32- training accuracy:0.9860194174757282- training loss:tensor(0.0017, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:33- training accuracy:0.9875728155339806- training loss:tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:34- training accuracy:0.9851456310679612- training loss:tensor(0.1342, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:35- training accuracy:0.9790291262135923- training loss:tensor(0.0040, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:36- training accuracy:0.9866990291262135- training loss:tensor(0.0069, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:37- training accuracy:0.9923300970873786- training loss:tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward0>)
+---------------------
+Round 11
+---------------------
+Training Points - 11300
+Test Accuracy - 83.66
+Class 2 Accuracy - 79.21
+Class 3 Accuracy - 81.84
+Class 1 Accuracy - 90.53
+Class 0 Accuracy - 83.05
+Selection Time - 0.0022611618041992188
+Trainining Time - 28759.491505146027
+Training
+Epoch:2- training accuracy:0.24831858407079646- training loss:tensor(1.4541, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:3- training accuracy:0.2534513274336283- training loss:tensor(1.3574, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:4- training accuracy:0.2963716814159292- training loss:tensor(1.3263, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:5- training accuracy:0.41938053097345135- training loss:tensor(1.2797, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:6- training accuracy:0.5306194690265487- training loss:tensor(0.7468, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:7- training accuracy:0.6225663716814159- training loss:tensor(0.4044, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:8- training accuracy:0.6908849557522124- training loss:tensor(0.4700, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:9- training accuracy:0.7584070796460177- training loss:tensor(0.2538, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:10- training accuracy:0.81- training loss:tensor(0.2321, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:11- training accuracy:0.8527433628318584- training loss:tensor(0.2637, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:12- training accuracy:0.8906194690265486- training loss:tensor(0.0542, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:13- training accuracy:0.912212389380531- training loss:tensor(0.1134, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:14- training accuracy:0.9373451327433628- training loss:tensor(0.0330, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:15- training accuracy:0.9487610619469027- training loss:tensor(0.4901, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:16- training accuracy:0.9568141592920354- training loss:tensor(1.2531, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:17- training accuracy:0.9624778761061947- training loss:tensor(0.0059, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:18- training accuracy:0.965575221238938- training loss:tensor(0.0065, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:19- training accuracy:0.9687610619469027- training loss:tensor(1.0945, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:20- training accuracy:0.9746017699115044- training loss:tensor(0.1169, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:21- training accuracy:0.9782300884955752- training loss:tensor(0.0068, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:22- training accuracy:0.9793805309734513- training loss:tensor(0.0028, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:23- training accuracy:0.9770796460176991- training loss:tensor(0.0015, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:24- training accuracy:0.9792920353982301- training loss:tensor(0.4582, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:25- training accuracy:0.9850442477876106- training loss:tensor(0.1676, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:26- training accuracy:0.9849557522123894- training loss:tensor(0.0251, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:27- training accuracy:0.9828318584070797- training loss:tensor(0.0730, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:28- training accuracy:0.9842477876106195- training loss:tensor(0.0091, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:29- training accuracy:0.9853982300884956- training loss:tensor(0.9381, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:30- training accuracy:0.9870796460176992- training loss:tensor(0.0001, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:31- training accuracy:0.9860176991150442- training loss:tensor(0.0022, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:32- training accuracy:0.9846017699115044- training loss:tensor(0.0034, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:33- training accuracy:0.9854867256637169- training loss:tensor(0.0099, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:34- training accuracy:0.9858407079646018- training loss:tensor(0.0012, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:35- training accuracy:0.9868141592920354- training loss:tensor(0.0377, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:36- training accuracy:0.9830088495575221- training loss:tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:37- training accuracy:0.9843362831858407- training loss:tensor(0.0038, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:38- training accuracy:0.983716814159292- training loss:tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:39- training accuracy:0.9875221238938053- training loss:tensor(0.0226, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:40- training accuracy:0.9877876106194691- training loss:tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:41- training accuracy:0.9880530973451327- training loss:tensor(0.0009, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:42- training accuracy:0.9885840707964602- training loss:tensor(0.0010, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:43- training accuracy:0.9853982300884956- training loss:tensor(0.0137, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:44- training accuracy:0.9812389380530974- training loss:tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:45- training accuracy:0.9851327433628319- training loss:tensor(0.0054, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:46- training accuracy:0.9875221238938053- training loss:tensor(0.0088, device='cuda:0', grad_fn=<NllLossBackward0>)
+Epoch:47- training accuracy:0.9916814159292036- training loss:tensor(0.0035, device='cuda:0', grad_fn=<NllLossBackward0>)

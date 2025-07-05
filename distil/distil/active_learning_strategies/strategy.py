@@ -96,7 +96,7 @@ class Strategy:
         probs = torch.zeros([len(to_predict_dataset), self.target_classes]).to(self.device)
         
         # Create a dataloader object to load the dataset
-        to_predict_dataloader = DataLoader(to_predict_dataset, batch_size = self.args['batch_size'], shuffle = False)
+        to_predict_dataloader = DataLoader(to_predict_dataset, batch_size=self.args['batch_size'], shuffle=False)
         
         evaluated_instances = 0
         
@@ -104,13 +104,15 @@ class Strategy:
             for elements_to_predict in to_predict_dataloader:
                 
                 # Calculate softmax (probabilities) of predictions
-                if type(elements_to_predict) == dict:
+                if isinstance(elements_to_predict, dict):
                     elements_to_predict = dict_to(elements_to_predict, self.device)
                     out = self.model(**elements_to_predict)
                 else:
                     elements_to_predict = elements_to_predict.to(self.device)
                     out = self.model(elements_to_predict)
-                pred = F.softmax(out, dim=1)
+                
+                # Fix: extract logits before applying softmax
+                pred = F.softmax(out.logits, dim=1)
                 
                 # Insert the calculated batch of probabilities into the tensor to return
                 start_slice = evaluated_instances
@@ -118,7 +120,8 @@ class Strategy:
                 probs[start_slice:end_slice] = pred
                 evaluated_instances = end_slice
 
-        return probs        
+        return probs
+   
 
     def predict_prob_dropout(self, to_predict_dataset, n_drop):
 

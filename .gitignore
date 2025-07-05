@@ -1,0 +1,17 @@
+.idea/
+=4.48.0
+cuda-12.3-installation/
+data/
+distil/.gitignore
+distil/MNIST/
+distil/checkpoints/
+distil/final_model.pkl
+distil/gdown.pl/
+distil/models/AGN
+distil/models/base_model.pth
+distil/submodlib/
+distil/tutorials/
+distil/venv/
+distill/
+venv39/
+wandb/
