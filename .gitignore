@@ -14,4 +14,12 @@ distil/tutorials/
 distil/venv/
 distill/
 venv39/
+myvenv/
 wandb/
+Image Classification/AGN/distil/checkpoints/
+Image Classification/AGN/distil/final_model.pkl
+Image Classification/AGN/distil/models/
+Image Classification/Flowers102/distil/checkpoints/
+Image Classification/Flowers102/distil/final_model.pkl
+Image Classification/Flowers102/distil/models/
+Image Classification/submodlib/

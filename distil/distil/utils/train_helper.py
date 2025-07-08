@@ -115,77 +115,84 @@ class data_train:
         self.training_dataset = AddIndexDataset(new_training_dataset)
 
     def get_acc_on_set(self, test_dataset):
-        
         """
-        Calculates and returns the accuracy on the given dataset to test
-        
+        Calculates and returns the accuracy on the given dataset to test.
+
         Parameters
         ----------
         test_dataset: torch.utils.data.Dataset
             The dataset to test
+
         Returns
         -------
         accFinal: float
             The fraction of data points whose predictions by the current model match their targets
         """	
-        
-        try:
-            self.clf
-        except:
+        if not hasattr(self, 'clf') or self.clf is None:
             self.clf = self.net
 
         if test_dataset is None:
             raise ValueError("Test data not present")
-        
-        if 'batch_size' in self.args:
-            batch_size = self.args['batch_size']
-        else:
-            batch_size = 1 
-        
-        loader_te = DataLoader(test_dataset, shuffle=False, pin_memory=True, batch_size=batch_size)
+
+        batch_size = self.args.get('batch_size', 1)
+        test_dataset = AddIndexDataset(test_dataset)
+        loader_te = DataLoader(test_dataset, shuffle=False, batch_size=batch_size)
+
+        self.clf = self.clf.to(device=self.device)
         self.clf.eval()
         accFinal = 0.
 
-        with torch.no_grad():        
-            self.clf = self.clf.to(device=self.device)
-            for batch in loader_te:
-                x = {k: v.to(self.device) for k, v in batch.items() if k != 'labels'}
-                y = batch['labels'].to(self.device)
-                out = self.clf(**x)
-                accFinal += torch.sum((torch.max(out.logits, 1)[1] == y).float()).item()#.data.item()
+        for x, y, _ in loader_te:
+            x = {k: v.to(self.device) for k, v in x.items()}
+            y = y.to(self.device)
+
+            with torch.no_grad():
+                out = self.clf(**x, freeze=True)
+                logits = out if not hasattr(out, 'logits') else out.logits
+                preds = torch.argmax(logits, dim=1)
+                accFinal += (preds == y).sum().item()
 
         return accFinal / len(test_dataset)
+
+
 
     def _train_weighted(self, epoch, loader_tr, optimizer, gradient_weights):
         self.clf.train()
         accFinal = 0.
-        criterion = self.args['criterion']
-        criterion.reduction = "none"
+        total_loss = 0.
+        total_samples = 0
 
-        for batch_id, (x, y, idxs) in enumerate(loader_tr):
-            x, y = x.to(device=self.device), y.to(device=self.device)
-            gradient_weights = gradient_weights.to(device=self.device)
+        criterion = nn.CrossEntropyLoss(reduction='none')  # per-sample loss
+
+        for batch_x, batch_y, batch_idxs in loader_tr:
+            batch_x = {k: v.to(self.device) for k, v in batch_x.items()}
+            batch_y = batch_y.to(self.device)
+            batch_idxs = batch_idxs.to(self.device)
+            batch_weights = gradient_weights[batch_idxs].to(self.device)
 
             optimizer.zero_grad()
-            out = self.clf(x)
+            out = self.clf(**batch_x, freeze=True)
+            logits = out if not hasattr(out, 'logits') else out.logits  # support both raw tensor or HuggingFace output
 
-            # Modify the loss function to apply weights before reducing to a mean
-            loss = criterion(out, y.long())
+            # Compute per-sample loss
+            loss = criterion(logits, batch_y.long())  # shape: (batch_size,)
 
-            # Perform a dot product with the loss vector and the weight vector, then divide by batch size.
-            weighted_loss = torch.dot(loss, gradient_weights[idxs])
-            weighted_loss = torch.div(weighted_loss, len(idxs))
+            # Apply gradient weights
+            weighted_loss = torch.dot(loss, batch_weights) / len(batch_idxs)
 
-            accFinal += torch.sum(torch.eq(torch.max(out,1)[1],y)).item() #.data.item()
+            # Accuracy and loss tracking
+            accFinal += torch.sum(torch.eq(torch.max(logits, 1)[1], batch_y)).item()
+            total_loss += weighted_loss.item() * len(batch_idxs)
+            total_samples += len(batch_idxs)
 
-            # Backward now does so on the weighted loss, not the regular mean loss
-            weighted_loss.backward() 
-
-            # clamp gradients, just in case
-            # for p in filter(lambda p: p.grad is not None, self.clf.parameters()): p.grad.data.clamp_(min=-.1, max=.1)
-
+            weighted_loss.backward()
             optimizer.step()
-        return accFinal / len(loader_tr.dataset), weighted_loss
+
+        avg_loss = total_loss / total_samples
+        avg_acc = accFinal / len(loader_tr.dataset)
+        return avg_acc, avg_loss
+
+
 
     def _train(self, epoch, loader_tr, optimizer):
         self.clf.train()
@@ -193,24 +200,22 @@ class data_train:
         criterion = self.args['criterion']
         criterion.reduction = "mean"
 
-        for batch_id, (x, y, idxs) in enumerate(loader_tr):
+        for x, y, _ in loader_tr:
             x = {k: v.to(self.device) for k, v in x.items()}
             y = y.to(self.device)
 
+            out = self.clf(**x, freeze=True)
+            logits = out if isinstance(out, torch.Tensor) else out.logits  # <-- Fix here
 
-            optimizer.zero_grad()
-            out = self.clf(**x)
-            out = self.clf(**x)
-            logits = out.logits  # extract tensor
-            loss = criterion(logits, y.long())
-            accFinal += torch.sum((torch.max(logits, 1)[1] == y).float()).item()
+            loss = criterion(logits, y.view(-1))
+            accFinal += torch.sum((torch.argmax(logits, dim=1) == y.view(-1)).float()).item()
+
             loss.backward()
-
-            # clamp gradients, just in case
-            # for p in filter(lambda p: p.grad is not None, self.clf.parameters()): p.grad.data.clamp_(min=-.1, max=.1)
-
             optimizer.step()
+            optimizer.zero_grad()
+
         return accFinal / len(loader_tr.dataset), loss
+
 
     def check_saturation(self, acc_monitor):
         
@@ -335,30 +340,31 @@ class data_train:
         """
         try:
             self.clf
-        except:
+        except AttributeError:
             self.clf = self.net
 
         if test_dataset is None:
             raise ValueError("Test data not present")
+        
+        test_dataset = AddIndexDataset(test_dataset)
 
-        if 'batch_size' in self.args:
-            batch_size = self.args['batch_size']
-        else:
-            batch_size = 1
-
+        batch_size = self.args.get('batch_size', 1)
         loader_te = DataLoader(test_dataset, shuffle=False, pin_memory=True, batch_size=batch_size)
+
         self.clf.eval()
+        self.clf = self.clf.to(device=self.device)
 
         correct = {}
         total = {}
 
         with torch.no_grad():
-            self.clf = self.clf.to(device=self.device)
-            for batch in loader_te:
-                x = {k: v.to(self.device) for k, v in batch.items() if k != 'labels'}
-                y = batch['labels'].to(self.device)
-                out = self.clf(**x)
-                preds = torch.max(out.logits, 1)[1]
+            for x, y, _ in loader_te:
+                x = {k: v.to(self.device) for k, v in x.items()}
+                y = y.to(self.device)
+
+                out = self.clf(**x, freeze=True)
+                logits = out if isinstance(out, torch.Tensor) else out.logits
+                preds = torch.argmax(logits, dim=1)
 
                 for label, pred in zip(y, preds):
                     label = int(label.item())
@@ -366,8 +372,6 @@ class data_train:
                     if label == int(pred.item()):
                         correct[label] = correct.get(label, 0) + 1
 
-        per_class_acc = {}
-        for cls in total:
-            per_class_acc[cls] = correct.get(cls, 0) / total[cls]
-
+        per_class_acc = {cls: correct.get(cls, 0) / total[cls] for cls in total}
         return per_class_acc
+
